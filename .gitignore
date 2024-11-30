@@ -1,0 +1,75 @@
+# Compilación y construcción
+/bin/
+/build/
+/target/
+
+# Dependencias locales y caché
+/.mvn/
+/.mvnw
+/.gradle/
+/.gradle/
+/.settings/
+!**/src/main/**/META-INF/
+
+# Logs
+*.log
+*.out
+
+# Archivos de configuración IDE
+/.classpath
+/.project
+/.idea/
+/*.iml
+.vscode/
+/*.ipr
+/.metadata/
+*.tdata
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de paquetes específicos
+*.jar
+*.war
+*.ear
+
+# Configuración específica del entorno
+*.env
+application*.properties
+application*.yaml
+application*.yml
+
+# Archivos de pruebas
+/test-output/
+*.class
+*~
+*.swp
+*.swo
+*.bak
+
+# Archivos temporales
+*.tmp
+*.temp
+*.cache
+*.pid
+
+# Generados por herramientas de calidad de código
+/reports/
+/jacoco/
+*.lcov
+/.sonar/
+
+# Archivos de compilación nativa
+hs_err_pid*
+
+# Archivos de compilación para Docker o CI/CD
+docker-compose.override.yml
+
+# Logs de herramientas
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Exclusiones específicas de Java 21 (modularidad, etc.)
+module-info.class

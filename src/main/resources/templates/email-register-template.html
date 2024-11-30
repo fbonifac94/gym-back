@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bienvenido</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f4f4f4;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.content {
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 20px;
+	color: #777;
+	font-size: 0.9em;
+}
+
+.password {
+	font-weight: bold;
+	color: #d9534f;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h2>¡Hola, <span th:text="${name}">[Name]</span>!</h2>
+		</div>
+		<div class="content">
+			<p>Te damos la bienvenida y te informamos que tu contraseña es:</p>
+			<p class="password"><span th:text="${password}">[Password]</span></p>
+			<p>Por favor, recuerda mantenerla segura y no compartirla con
+				nadie.</p>
+			<p>Si tienes alguna pregunta o necesitas ayuda, no dudes en
+				contactarnos.</p>
+			<p>¡Gracias por unirte a nosotros!</p>
+		</div>
+		<div class="footer">
+			<p>Este es un mensaje automático, por favor no respondas a este
+				correo.</p>
+		</div>
+	</div>
+</body>
+</html>
